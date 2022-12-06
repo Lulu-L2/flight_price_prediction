@@ -29,7 +29,7 @@ y_predict=lgb.predict(X_test)
 
 import pickle
 # Saving model
-pickle.dump(lgb, open('lgb_model.pkl','r'))
-model=pickle.load(open('lgb_model.pkl','r'))
+pickle.dump(lgb, open('lgb_model.pkl','w+'))
+model=pickle.load(open('lgb_model.pkl',r'))
 print(y_predict)
 
