@@ -7,7 +7,7 @@ import joblib
 import pandas as pd
 
 app = Flask(__name__)
-model=pickle.load(open('model.pkl','r'))
+model=pickle.load(open('model.pkl','rb'))
 
 
 @app.route("/")
@@ -41,7 +41,7 @@ def predict():
     # clf=LGBMRegressor()
     # clf.fit(X_train,y_train)
 
-    model=pickle.load(open('model.pkl','r'))
+    model=pickle.load(open('model.pkl','rb'))
     model=joblib.load(model)
     if request.method == "POST":
 
