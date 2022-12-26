@@ -22,3 +22,9 @@ Werkzeug
 wincertstore
 catboost
 lightgbm
+xgboost
+tensorflow
+keras
+opencv
+seaborn
+pytorch
